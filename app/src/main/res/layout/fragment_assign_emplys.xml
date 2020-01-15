@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignEmplysFrag"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/devBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Development"
+                android:layout_margin="1dp"
+                android:background="@drawable/btn_dboard"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+            <Button
+                android:id="@+id/suptBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/devBtn"
+                android:text="Support"
+                android:layout_margin="1dp"
+                android:background="@drawable/btn_dboard"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+            <Button
+                android:id="@+id/seoBtn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/suptBtn"
+                android:text="Seo"
+                android:layout_margin="1dp"
+                android:background="@drawable/btn_dboard"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+            <Button
+                android:id="@+id/baBtn"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/seoBtn"
+                android:text="B &amp; A "
+                android:layout_margin="1dp"
+                android:background="@drawable/btn_dboard"
+                android:textColor="#fff"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/footer"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#deeaff">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </ScrollView>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/sbtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Assign To"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_dboard"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/selectall"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/sbtn"
+                android:text="Select All"
+                android:layout_margin="7dp"
+                android:background="@drawable/btn_dboard"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/deselect"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/selectall"
+                android:text="DeSelect"
+                android:layout_margin="7dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="@drawable/btn_dboard"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

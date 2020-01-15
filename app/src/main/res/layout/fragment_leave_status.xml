@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Leave_Status_Frag"
+    android:id="@+id/lsllyt">
+
+
+    <Button
+        android:id="@+id/dateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        android:background="@drawable/whiteborder2"
+        android:hint="@string/start_date"
+        android:textColor="#000"
+        android:paddingStart="20dp"
+        android:paddingEnd="5dp"
+        android:drawableLeft="@drawable/cal24"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/cal24" />
+    <TextView
+        android:id="@+id/refreshTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:drawableStart="@drawable/rotation"
+        android:layout_gravity="center|end"
+        android:layout_margin="15dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle"
+        android:background="#bef5ff">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

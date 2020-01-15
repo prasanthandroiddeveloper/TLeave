@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Dashboard"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+       &lt;!&ndash; <LinearLayout
+            android:id="@+id/btnllyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">&ndash;&gt;
+
+            <Button
+                android:text="@string/apply_leave"
+                android:id="@+id/aplyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="50dp"
+                android:background="@drawable/btn_grdnt1"
+                android:textColor="#fff"
+                android:fontFamily="@font/calibri"
+                android:textSize="18sp"/>
+
+            &lt;!&ndash; <Button
+                 android:text="@string/report"
+                 android:id="@+id/range"
+                 android:layout_margin="5dp"
+                 android:layout_width="0dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/btn_clr2"
+                 android:textColor="#fff" />
+
+             <Button
+                 android:text="@string/approve_leave"
+                 android:id="@+id/AplevBtn"
+                 android:layout_margin="5dp"
+                 android:layout_width="0dp"
+                 android:layout_height="40dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/btn_clr2"
+                 android:textColor="#fff" />&ndash;&gt;
+       &lt;!&ndash; </LinearLayout>&ndash;&gt;
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/kandira"
+                android:layout_margin="10dp"
+                android:textColor="#4e54c8"/>
+            <Button
+                android:id="@+id/sdateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/whiteborder2"
+                android:hint="@string/start_date"
+                android:textColor="#000"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:drawableLeft="@drawable/cal24"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:drawableStart="@drawable/cal24" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/LeaveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Leave"
+                    android:textColor="#4e54c8"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="16sp"/>
+                <Button
+                    android:id="@+id/PermissionBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Permission"
+                    android:textColor="#4e54c8"
+                    android:background="@drawable/btn_plain"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+                <Button
+                    android:id="@+id/supBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/support"
+                    android:textColor="#fff"
+                    android:layout_margin="3dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_dboard"/>
+                <Button
+                    android:id="@+id/devBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/development"
+                    android:textColor="#fff"
+                    android:layout_margin="3dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_dboard"/>
+                <Button
+                    android:id="@+id/seoBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="@string/seo"
+                    android:textColor="#fff"
+                    android:layout_margin="3dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_dboard"/>
+
+
+                <Button
+                    android:id="@+id/busBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3"
+                    android:text="B &amp; A TEAM"
+                    android:textColor="#fff"
+                    android:layout_margin="3dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/btn_dboard"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:layout_margin="5dp">
+
+
+            &lt;!&ndash;  <TextView
+              android:id="@+id/countTv"
+              android:layout_width="150dp"
+              android:layout_height="80dp"
+              android:background="@drawable/box_gdient"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textSize="22sp"
+              android:textColor="#fff" />&ndash;&gt;
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/namecntRcylr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="#689F38"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Header"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#689F38"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Footer"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fillViewport="true">
+            <TextView
+                android:id="@+id/bodytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textColor="#F44336"
+                android:gravity="center"
+                android:textSize="25sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

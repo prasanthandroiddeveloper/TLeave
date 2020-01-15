@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127577595430",
+    "firebase_url": "https://tripleave-94a10.firebaseio.com",
+    "project_id": "tripleave-94a10",
+    "storage_bucket": "tripleave-94a10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127577595430:android:a905338edd66edfc53d0e7",
+        "android_client_info": {
+          "package_name": "com.naestech.f_tleave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127577595430-jp7l9si0sjcupp017651c88ng505flpl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naestech.f_tleave",
+            "certificate_hash": "1c59d5cf764e0bb3d79ee920756f11756421ec33"
+          }
+        },
+        {
+          "client_id": "127577595430-ci481emrgtdtifq62v89pbrvvk4sft7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3nWQX6R_FgsYOsUaC3GB2idCAqx0QZ3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127577595430-ci481emrgtdtifq62v89pbrvvk4sft7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

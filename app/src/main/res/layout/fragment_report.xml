@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Report_Frag">
+    <TextView
+        android:id="@+id/headTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/colorAccent"
+        android:text="Range Wise Employee Leave Count"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sdateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:hint="@string/start_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:drawableLeft="@drawable/cal24"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:drawableStart="@drawable/cal24" />
+
+        <Button
+            android:id="@+id/enddateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:drawableLeft="@drawable/cal24"
+            android:hint="@string/end_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:drawableStart="@drawable/cal24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/LvsBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leaves"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_dboard"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <Button
+            android:id="@+id/WoffBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Week off"
+            android:background="@drawable/btn_dboard"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nameRclr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

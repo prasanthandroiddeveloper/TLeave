@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/maingrp">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashb1"
+            android:checkable="true"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/report"
+            android:checkable="true"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/AprvL"
+            android:icon="@drawable/approved"
+            android:checkable="true"
+            android:title="Approve Leave" />
+
+        <item
+            android:title="Assign Employees to leads"
+            android:id="@+id/asgn"
+            android:icon="@drawable/paper"
+            android:checkable="true"/>
+
+        <item
+            android:title="Assign WeekOff"
+            android:id="@+id/Weekoff"
+            android:icon="@drawable/weekoff"
+            android:checkable="true"/>
+
+
+        <item
+            android:title="Profile"
+            android:id="@+id/profile"
+            android:icon="@drawable/man"
+            android:checkable="true"/>
+
+
+        <item
+            android:title="Employee Details"
+            android:id="@+id/empdtls"
+            android:icon="@drawable/ee"
+            android:checkable="true"/>
+
+
+        <item
+            android:title="Compensate Leave"
+            android:id="@+id/CLeave"
+            android:icon="@drawable/eee"
+            android:checkable="true"/>
+
+    </group>
+</menu>

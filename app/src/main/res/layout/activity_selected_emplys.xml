@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedEmplysAct"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/homeround"
+                android:src="@drawable/employee"
+                android:scaleType="centerCrop"
+                android:padding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Employee Names"
+                android:gravity="center"
+                android:textColor="#1b1839"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="15dp"
+                card_view:cardUseCompatPadding="true"
+                app:cardBackgroundColor="#c6d6f9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/selectedTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="#2035f1"
+                            android:gravity="center"
+                            android:layout_margin="2.5dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textAllCaps="true"/>
+                    </ScrollView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/antvLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assign To"
+                    android:layout_marginLeft="23dp"
+                    android:textColor="#302b63"
+                    android:gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                <!-- <AutoCompleteTextView
+                     android:id="@+id/AdimnactTv"
+                     android:layout_width="match_parent"
+                     android:layout_height="55dp"
+                     android:layout_gravity="center"
+                     android:background="@drawable/btn_back"
+                     android:inputType="text"
+                     android:layout_margin="15dp"
+                     android:paddingEnd="10dp"
+                     android:paddingRight="10dp"
+                     android:paddingStart="10dp"
+                     android:gravity="center|start"
+                     android:textSize="20sp"
+
+                     android:textColorHint="@color/colorPrimary" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btn_plain">
+                    <Spinner
+                        android:id="@+id/ANames"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                    </Spinner>
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/asgnBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_dboard"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center|bottom"/>
+
+</FrameLayout>

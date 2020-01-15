@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TNManage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false" />
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_mobile_number">Email Id</string>
+    <string name="packages">Leave type</string>
+    <string name="from">Date</string>
+    <string name="to">To</string>
+    <string name="default_notification_channel_id">TripLeave</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="loading">Loading</string>
+    <string name="search_by_city_name">search_by_employee_name</string>
+    <string name="search">search</string>
+    <string name="single">Single</string>
+    <string name="multiple">Multiple</string>
+    <string name="week_off">Week Off</string>
+    <string name="part_of_the_day">Part of the day</string>
+    <string name="assigned_to">Assigned To</string>
+    <string name="reason">Reason</string>
+    <string name="submit">Submit</string>
+    <string name="apply_leave">Apply Leave</string>
+    <string name="report">Report</string>
+    <string name="approve_leave">Approve Leave</string>
+    <string name="dummy_content">dummy_content</string>
+    <string name="support">Support</string>
+    <string name="development">Development</string>
+    <string name="seo">SEO</string>
+</resources>

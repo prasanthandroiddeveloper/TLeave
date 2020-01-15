@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlcweekOffAct">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/homeround"
+            android:src="@drawable/sunbathing"
+            android:scaleType="centerCrop"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Employee Names"
+            android:gravity="center"
+            android:textColor="#302b63"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#d0e1ff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/slectEmpTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#2035f1"
+                        android:gravity="center"
+                        android:layout_margin="3dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textAllCaps="true"/>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textColor="#302b63"
+                    android:text="Assign Week Off"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/caldateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/calendar"
+                    android:gravity="center|start"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/calendar" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="5dp">
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dboard"
+            android:text="Insert Weekoff"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#fff"
+            android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_dboard"
+            android:text="Update Weekoff"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#fff"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+</FrameLayout>

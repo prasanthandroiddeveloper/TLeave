@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+
+                    android:id="@+id/flwTV"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient1"
+                    android:fontFamily="@font/good"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|end"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/cross"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#80D1D1D1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/DeptTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Address"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Temp.Address" />
+
+                <TextView
+                    android:id="@+id/tempTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Address"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Date of Birth" />
+
+                <TextView
+                    android:id="@+id/AemailTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Address"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Date of Joining" />
+
+                <TextView
+                    android:id="@+id/AstatusTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Mobile Numbers" />
+
+                <TextView
+                    android:id="@+id/AdmnnameTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:text="Email Id" />
+
+                <TextView
+                    android:id="@+id/emailTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:layout_weight="1"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center|start"
+                    android:textColor="#0000A0"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="100"
+                 android:orientation="horizontal">
+
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="30"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:text="Address"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/DeptTV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:textStyle="bold"
+                         android:textColor="#0000A0"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+             </LinearLayout>-->
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="100"
+                 android:orientation="horizontal">
+
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="30"
+                     android:orientation="vertical">
+
+                     <TextView
+
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:text="Temp.Address"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/tempTV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:textColor="#0000A0"
+                         android:textStyle="bold"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+             </LinearLayout>-->
+
+
+            <!--   <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="100"
+                   android:orientation="horizontal">
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="30"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:text="Date of Birth"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="4dp"
+                           android:drawablePadding="8dp"
+                           android:fontFamily="@font/calibri"
+                           android:gravity="center" />
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="70"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:id="@+id/AemailTV"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginBottom="4dp"
+                           android:drawablePadding="8dp"
+                           android:textColor="#0000A0"
+                           android:textStyle="bold"
+                           android:fontFamily="@font/calibri"
+                           android:gravity="center" />
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>-->
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="100"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="30"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:text="Date of Joining"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/AstatusTv"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:textColor="#0000A0"
+                         android:textStyle="bold"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+             </LinearLayout>-->
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="100"
+                 android:orientation="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="30"
+                     android:orientation="vertical">
+
+                     <TextView
+                        android:id="@+id/AdmnnameTV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:textColor="#0000A0"
+                         android:textStyle="bold"
+                         android:textSize="16sp"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="70"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:id="@+id/DesignationTV"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="4dp"
+                         android:drawablePadding="8dp"
+                         android:textColor="#0000A0"
+                         android:textStyle="bold"
+                         android:textSize="16sp"
+                         android:fontFamily="@font/calibri"
+                         android:gravity="center" />
+
+
+                 </LinearLayout>
+
+             </LinearLayout>-->
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="100"
+                  android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="50"
+                      android:orientation="vertical">
+
+                      <TextView
+                          android:id="@+id/emailTV"
+                          android:layout_width="match_parent"
+                          android:layout_height="30dp"
+                          android:layout_marginBottom="4dp"
+                          android:drawablePadding="8dp"
+                          android:textColor="#0000A0"
+                          android:textStyle="bold"
+                          android:textSize="14sp"
+                          android:fontFamily="@font/poppins_semibold"
+                          android:gravity="start" />
+
+
+                  </LinearLayout>
+
+
+
+              </LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+

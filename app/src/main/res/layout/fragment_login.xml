@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".Login_Frag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/mainLayt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="Autofill,TextFields">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Tripnetra Management"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#3B5998"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#0C0C0C"
+                android:text="LOGIN"
+                android:padding="7dp"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/unameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    style="@style/EditTextHint"
+                    android:hint="@string/email_mobile_number"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#0c4dc6">
+
+                <EditText
+                    android:id="@+id/pswdEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="#fff"
+                    android:textColor="#000"
+                    style="@style/EditTextHint"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="@string/sign_in"
+                android:textStyle="bold"
+                android:padding="2dp"
+                style="@style/loginButton" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frgtTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Forgot Password ?"
+                    android:layout_margin="10dp"
+                    android:textColor="#DF1010"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="end"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

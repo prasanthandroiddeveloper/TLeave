@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Approve_Leave_Act">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="#fcaa5f"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve Leave"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textColor="#c63116"
+            android:textAllCaps="true"
+            android:fontFamily="@font/kandira"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/LlytBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/approveBtn"
+                android:text="Approve"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_clr"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/notapproveBtn"
+                android:text="Not Approve"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_clr"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Name"
+                            android:textColor="#189fd9"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:id="@+id/EnameTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:layout_weight="1"
+                            android:textColor="#283180"
+                            android:layout_gravity="center|start"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/rsnLNR"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Reason"
+                            android:textColor="#189fd9"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/AreasonTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#283180"
+
+                            android:layout_gravity="center|start"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/noofdaysllyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Number Of Days"
+                            android:textColor="#189fd9"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/DcountTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#283180"
+                            android:layout_gravity="center|start"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:id="@+id/permsnllyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Permission"
+                            android:textColor="#189fd9"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/PmsnTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#283180"
+                            android:layout_gravity="center|start"
+                            android:textSize="20sp"
+                            />
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/Datellyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textColor="#189fd9"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/DateTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#283180"
+                            android:textSize="20sp"
+                            android:layout_gravity="center|start"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:id="@+id/NARsnEt"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/btn_plain"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/calibri"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
